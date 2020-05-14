@@ -63,9 +63,11 @@ header {
 .menu a {
   display: block;
   padding: 10px 20px;
-  transition: background-color 1s, color 1s;
+  /* Animação Navbar */
+  transition: background-color 0.5s, color 0.5s;
 }
 
+/* Cor para Animação Navbar */
 .menu a:active,
 .menu a:hover {
   background-color: #FFE4E1;
@@ -78,9 +80,10 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
+/* Animação do Título */
 .titulo {
   transform: scale(0.2) translateY(50vh);
   opacity: 0;
@@ -102,7 +105,7 @@ a:hover {
 /* Organização Entrda site, texto */
 .site-subtitle,
 .site-title {
-  color: whitesmoke;
+  color: #CD5C5C;
   text-align: center;
 }
 
@@ -114,7 +117,7 @@ a:hover {
 
 .site-subtitle {
   font-size: 1.5em;
-
+  color: black;
 }
 
 /* Detalhes Sections */
@@ -174,9 +177,9 @@ a:hover {
 
 /* Organização Contato e Icons */
 .contato{
-  background-color: #E6E6FA;
+  background-color: #CD5C5C;
   padding: 2em;
-  min-height: 30vh;
+  min-height: 10vh;
   text-align: center;
 }
 
@@ -185,13 +188,13 @@ a:hover {
 }
 
 .contato a {
-  color: #663399;
+  color: whitesmoke;
   font-size: 4em;
-  transition: text-shadow 1s;
+  transition: text-shadow 0.5s;
 }
 
 .contato h2 {
-  color: #663399;
+  color: whitesmoke;
   margin-bottom: 1em;
   font-size: 2em;
 }
@@ -199,5 +202,5 @@ a:hover {
 .contato a:active,
 .contato a:hover  {
   text-decoration: none;
-  text-shadow: 0px 0px 10px rgba(255,255,255,.5);
+  text-shadow: 0px 0px 10px whitesmoke;
 }
