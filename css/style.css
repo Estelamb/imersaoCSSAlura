@@ -9,7 +9,6 @@ body {
   font-family: 'Barlow Condensed', sans-serif;
   height: 100vh;
   font-size: 12px;
-  background-color: #FAEBD7;
 }
 
 /* se a tela tiver pelo menos 400px vai carregar estes estilos */
@@ -129,7 +128,6 @@ a:hover {
   text-align: justify;
 }
 
-.contato h2,
 .portfolio h2 {
   color: #CD5C5C;
   margin-bottom: 1em;
@@ -176,7 +174,7 @@ a:hover {
 
 /* Organização Contato e Icons */
 .contato{
-  background-color: #FFDAB9;
+  background-color: #E6E6FA;
   padding: 2em;
   min-height: 30vh;
   text-align: center;
@@ -187,9 +185,15 @@ a:hover {
 }
 
 .contato a {
-  color: #CD5C5C;
+  color: #663399;
   font-size: 4em;
   transition: text-shadow 1s;
+}
+
+.contato h2 {
+  color: #663399;
+  margin-bottom: 1em;
+  font-size: 2em;
 }
 
 .contato a:active,
