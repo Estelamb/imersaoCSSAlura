@@ -1,0 +1,191 @@
+/* Configuração Geral da Página */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Barlow Condensed', sans-serif;
+  height: 100vh;
+  font-size: 12px;
+  background-color: #FAEBD7;
+}
+
+/* se a tela tiver pelo menos 400px vai carregar estes estilos */
+@media (min-width: 400px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* breakpoint */
+@media (min-width: 600px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+/* breakpoint */
+@media (min-width: 1200px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../img/fundo.jpg');
+  background-size: auto 150vh;
+}
+
+.menu {
+  background-color: white;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  z-index: 1;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: center;
+}
+
+.menu li {
+ list-style: none;
+}
+
+.menu a {
+  display: block;
+  padding: 10px 20px;
+  transition: background-color 1s, color 1s;
+}
+
+.menu a:active,
+.menu a:hover {
+  background-color: #FFE4E1;
+  color: #696969;
+}
+
+a {
+  color: #CD5C5C;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.titulo {
+  transform: scale(0.2) translateY(50vh);
+  opacity: 0;
+  animation: 1s ease 2s animacaoTitulo forwards;
+}
+
+@keyframes animacaoTitulo {
+  from {
+    transform: scale(0.2) translateY(50vh);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Organização Entrda site, texto */
+.site-subtitle,
+.site-title {
+  color: whitesmoke;
+  text-align: center;
+}
+
+.site-title {
+  font-size: 3em;
+  font-family: 'Lobster Two', cursive;
+  margin: 0.5em;
+}
+
+.site-subtitle {
+  font-size: 1.5em;
+
+}
+
+/* Detalhes Sections */
+.portfolio {
+  padding: 2em;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.contato h2,
+.portfolio h2 {
+  color: #CD5C5C;
+  margin-bottom: 1.5em;
+  font-size: 2em;
+}
+
+/* Organização Portfólio */
+.portfolio .grid {
+  display: grid;
+  gap: 2em;
+}
+
+@media (min-width: 560px) {
+  .portfolio .grid {
+    grid-template-columns: 240px 240px;
+  }
+}
+
+@media (min-width: 880px) {
+  .portfolio .grid {
+    grid-template-columns: repeat(3, 260px);
+    align-content: center;
+    justify-content: center;
+    height: calc(100vh - 8em - 48px);
+  }
+}
+
+.portfolio figure {
+  text-align: center;
+}
+
+.img-portfolio {
+  height: 180px;
+  width: 240px;
+  object-fit: cover;
+  object-position: left bottom;
+  transition: transform 500ms;
+}
+
+.img-portfolio:hover {
+  transform: scale(1.2) rotate(-2deg);
+}
+
+/* Organização Contato e Icons */
+.contato{
+  background-color: #FFDAB9;
+  padding: 2em;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.contato .icons {
+  text-align: center;
+}
+
+.contato a {
+  color: #CD5C5C;
+  font-size: 4em;
+  transition: text-shadow 1s;
+}
+
+.contato a:active,
+.contato a:hover  {
+  text-decoration: none;
+  text-shadow: 0px 0px 10px rgba(255,255,255,.5);
+}
