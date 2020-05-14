@@ -33,6 +33,7 @@ body {
   }
 }
 
+/* Configuração Entrada Site */
 header {
   height: 100vh;
   display: flex;
@@ -42,6 +43,7 @@ header {
   background-size: auto 150vh;
 }
 
+/* Configuração Navbar */
 .menu {
   background-color: white;
   position: fixed;
@@ -86,6 +88,7 @@ a:hover {
   animation: 1s ease 2s animacaoTitulo forwards;
 }
 
+/*  Configuração Animação Titulo */
 @keyframes animacaoTitulo {
   from {
     transform: scale(0.2) translateY(50vh);
@@ -122,10 +125,14 @@ a:hover {
   text-align: center;
 }
 
+.portfolio p{
+  text-align: justify;
+}
+
 .contato h2,
 .portfolio h2 {
   color: #CD5C5C;
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
   font-size: 2em;
 }
 
@@ -135,6 +142,7 @@ a:hover {
   gap: 2em;
 }
 
+/* Configuracao em Varias Telas */
 @media (min-width: 560px) {
   .portfolio .grid {
     grid-template-columns: 240px 240px;
@@ -170,7 +178,7 @@ a:hover {
 .contato{
   background-color: #FFDAB9;
   padding: 2em;
-  min-height: 100vh;
+  min-height: 50vh;
   text-align: center;
 }
 
