@@ -120,15 +120,67 @@ a:hover {
   color: black;
 }
 
-/* Detalhes Sections */
-.portfolio {
+/* Configuração Página */
+@media(min-width: 1200px){
+  .container{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Configuração Sobre */
+.sobre{
+  background-color: #FFFAFA;
   padding: 2em;
-  min-height: 100vh;
+  min-height: 10vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sobre h2{
+  color: #CD5C5C;
+  margin-bottom: 1em;
+  font-size: 2em;
   text-align: center;
+}
+
+.sobre p{
+  text-align: justify;
+  margin-bottom: 0.5em;
+  text-indent: 1.5em;
+}
+
+/* Espaçamaneto da Imagem com o Texto */
+.sobre .avatar{
+  margin-bottom: 1em;
+}
+
+/* Deixar Imagem Redonda */
+.sobre .avatar img{
+  border-radius: 50%;
+}
+
+@media(min-width: 500px){
+  .sobre .avatar{
+    float: left;
+    margin-right: 2em;
+  }
+}
+
+/* Configuração Portfólio */
+.portfolio {
+  background-color: #fce4ec;
+  padding: 2em;
+  min-height: 80vh;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .portfolio p{
   text-align: justify;
+  text-indent: 1.5em;
 }
 
 .portfolio h2 {
@@ -165,14 +217,15 @@ a:hover {
 
 .img-portfolio {
   height: 180px;
-  width: 240px;
+  width: 100%;
   object-fit: cover;
   object-position: left bottom;
   transition: transform 500ms;
 }
 
+/* Animação Imagem Portfólio */
 .img-portfolio:hover {
-  transform: scale(1.2) rotate(-2deg);
+  transform: scale(2);
 }
 
 /* Organização Contato e Icons */
