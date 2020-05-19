@@ -13,7 +13,6 @@ html{
 body {
   background-color: #FFFAFA;
   font-family: 'Barlow Condensed', sans-serif;
-  height: 100vh;
   font-size: 12px;
 }
 
@@ -259,6 +258,12 @@ a:hover {
   text-align: center;
 }
 
+.contato h2 {
+  color: whitesmoke;
+  margin-bottom: 1em;
+  font-size: 2em;
+}
+
 .contato .icons {
   text-align: center;
 }
@@ -267,12 +272,6 @@ a:hover {
   color: whitesmoke;
   font-size: 4em;
   transition: text-shadow 0.5s;
-}
-
-.contato h2 {
-  color: whitesmoke;
-  margin-bottom: 1em;
-  font-size: 2em;
 }
 
 .contato a:active,
