@@ -1,3 +1,8 @@
+/* Scroll leve para a página */ 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Configuração Geral da Página */
 * {
   margin: 0;
