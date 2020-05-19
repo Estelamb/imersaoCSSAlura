@@ -1,6 +1,6 @@
-/* Scroll leve para a página */ 
-html {
-  scroll-behavior: smooth;
+/* Fazendo Scroll da Página mais leve */
+html{
+  scroll-behavior: smooth;
 }
 
 /* Configuração Geral da Página */
@@ -11,6 +11,7 @@ html {
 }
 
 body {
+  background-color: #FFFAFA;
   font-family: 'Barlow Condensed', sans-serif;
   height: 100vh;
   font-size: 12px;
@@ -126,17 +127,16 @@ a:hover {
 }
 
 /* Configuração Página */
-@media(min-width: 1200px){
-  .container{
-    max-width: 1200px;
+@media (min-width: 1200px) {
+  .container {
     margin-left: auto;
     margin-right: auto;
+    max-width: 1200px;
   }
 }
 
 /* Configuração Sobre */
 .sobre{
-  background-color: #FFFAFA;
   padding: 2em;
   min-height: 10vh;
   margin-left: auto;
@@ -261,4 +261,17 @@ a:hover {
 .contato a:hover  {
   text-decoration: none;
   text-shadow: 0px 0px 10px whitesmoke;
+}
+
+/* Configuração Footer */
+footer{
+  background-color: #a93434;
+  padding: 2em;
+  min-height: 10vh;
+  text-align: center;
+  color: whitesmoke;
+}
+
+footer p{
+  text-indent: 1.5em;
 }
