@@ -1,2 +1,2 @@
 # imersaoCSSAlura
-Criando um site com HTML e CSS, através do curso Imersão CSS da Alura
+Site desenvolvido durante a Imersão da Alura. O site foi desenvolvido em HTML e CSS.
